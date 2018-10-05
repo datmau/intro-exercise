@@ -82,24 +82,19 @@ def userInfo():
         user.giveAmmount()
         print('The amount to pay {} is {}'.format(user.getUsername(),user.ammount))
     
-
+def writeOnFile(data_set_input):    
+    file = open('data.txt','a+')
+    while data_set_input != 'q':
+        file.write('{0}\n'.format(data_set_input))
+        data_set_input = input('Type the dataset to calculate if you dont have a new data press "q"\n')
         
+    
 
 def main():
-    '''dataset_input =input('Type the dataset to calculate, if you dont have a new data press q')
-    while dataset_input != 'q':   
-        loadDataToFile(dataset_input)
-        dataset_input=input('Type the dataset to calculate, if you dont have a new data press q')'''
+    option_input = input('Type the dataset to calculate if you dont have a new data press "q"\n')
+    writeOnFile(option_input)
     userInfo()
-    
 
-
-    
 
 if __name__ == '__main__':
-    main()
-                
-            
-
-
-        
+    main()       
