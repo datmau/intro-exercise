@@ -5,7 +5,7 @@
 
 ## RUN
 ### For run the application please go to your command prompt and type:
-``` python Salary.py ``` 
+``` python Ammountapp.py ``` 
 ### If you write data manually press "q" when you run the application. In other case enter the data manually in program when you finish press "q" and the application display the ammount calculated.
 ### Note: If you write in console don't forget to write "" outside the text.
 
